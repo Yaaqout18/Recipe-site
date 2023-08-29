@@ -1,0 +1,665 @@
+/*
+============================== #Dev >> Yaaqout Tareq (A33w). ========================
+********************** design on Secreen  15.6 inch . ***************
+
+----------------- #Languages are used only (Html & css) .
+-- *1.0 >> Header .
+-- *1.1 >> #Side-overlay .
+-- *1.2 >> #Side-Navbar Section .
+-- *2.0 >> #Home-Section .
+-- *3.0 >> #Second-Section .
+-- *4.0 >> #Third-Section .
+-- *5.0 >> #Footer .
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 2050px;
+  background-color: #e7ebf0;
+  /* perspective: 700px; */
+}
+/*================================================== #Header-Section . ======================================*/
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: #928f87;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  opacity: 0.7;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 5px;
+  margin-left: 50px;
+  float: left;
+  cursor: pointer;
+}
+
+
+.sr-icon {
+  float: left;
+  margin-top: 18px;
+  margin-left: 526px;
+  color: #390099;
+  cursor: pointer;
+  position: absolute;
+  z-index: 2;
+}
+
+.search {
+  float: left;
+  width: 250px;
+  height: 29px;
+  border: 0px solid;
+  border-radius: 13px;
+  margin-top: 10px;
+  box-shadow: 3px 5px 5px #4c4b4e;
+  position: relative;
+  margin-left: 310px;
+  position: absolute;
+}
+
+.search:hover {
+  width: 255px;
+  height: 33px;
+}
+
+.header ul li {
+  float: left;
+  list-style: none;
+  margin-top: 20px;
+  margin-left: 19px;
+}
+
+.nav-bar{
+  list-style: none;
+  float: left;
+  margin-left: 980px;
+  margin-top: 1px;
+}
+
+.sign-up{
+  width: 80px;
+  height: 25px;
+  border: 0px solid;
+  border-radius: 13px;
+  margin-right: 20px;
+  margin-top: 12px;
+  box-shadow: 10px 10px 20px #4c4b4e;
+  color: #000000;
+  float: right;
+}
+
+.sign-up:hover{
+  width: 83px;
+  height: 28px;
+  background-color: #390099;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.header a {
+  text-decoration: none;
+  color: #040505;
+  position: relative;
+}
+
+.header a:hover {
+  color: #2400f3;
+}
+.side-navbar-ico{
+  margin-left: 25px;
+  margin-top: 20px;
+  cursor: pointer;
+  display: block;
+  position: absolute;
+}
+.nav-bar a:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 22%;
+  left: 0;
+  bottom: 0;
+  background-color: #070707;
+  opacity: 0;
+  margin-bottom: -9px;
+}
+.nav-bar a:hover::after{
+  width: 100%;
+  height: 20%;
+  opacity: 0.9;
+  transition: 0.5s;
+  border-radius: 15px;
+  }
+  /*============================= *1.1 >> #Side-overlay . ========================= */
+.side-navbar::after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
+  background-color: #1d0e32;
+  opacity: 0;
+  border-radius: 13px 0px 0px 13px;
+}
+.side-navbar:hover::after{
+  width: 11.5%;
+  height: 100vh;
+  opacity: 0.7;
+  transition: 1s;
+}
+/*========================================== *1.2 >> #Side-Navbar Section . ================================== */
+.side-content{
+  width: 175px;
+  height: 100vh;
+  border: 1px solid;
+  border-radius: 13px 0px 0px 13px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  display: block;
+}
+
+.chfs{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-top: 16px;
+  margin-left: 5px;
+  box-shadow: 2px 2px 3px #b6bbc0;
+}
+.top-ico{
+  margin: 10px 15px;
+}
+.sub-ico{
+  margin: 10px 15px;
+}
+.bottom-ico{
+  margin: 10px 15px;
+}
+.true-ico{
+  color: #0561ec;
+  text-shadow: 1px 1px 1px #0530ec;
+}
+.side-content a{
+  text-decoration: none;
+  color: #fefee3;
+}
+.c-home{
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.side-content p{
+  margin-left: 45px;
+  margin-top: -30px;
+}
+.homepic{
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 30px;
+}
+.side-content .sherpiny-pic{
+  margin-left: 4px;
+}
+.d-line{
+  width: 170px;
+  height: 2px;
+  border: 0px solid;
+  margin-top: 8px;
+  background-color: #070707;
+  box-shadow: 2px 2px 3px #070707;
+}
+.side-navbar:hover .side-content{
+  visibility: visible;
+  transition: 3.5s;
+  opacity: 1;
+}
+
+/* ================================================== *2.0 >> #Home-Section . ===================================*/
+.home-sec {
+  height: 900px;
+  width: 76%;
+  background-image: url(../images/homechef1.jpg);
+  background-size: cover;
+  position: relative;
+  border: 0px solid;
+  border-radius: 5px;
+  margin: auto;
+  margin-top: 70px;
+  margin-bottom: 100px;
+  animation-name: change;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+@keyframes change {
+  0% {
+    background-image: url(../images/homechef1.jpg);
+  }
+  50%{
+    background-image: url(../images/homechef2.jpg);
+  }
+  100%{
+    background-image: url(../images/homechef3.jpg);
+  }
+}
+
+.home-sec .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  font-size: 21px;
+}
+
+.content h1 {
+  color: #f6f0f8;
+  text-shadow: 20px 30px 50px #271f31;
+}
+
+.content h2 {
+  color: #dcfcc7;
+  text-shadow: -10px 20px 40px #929096;
+}
+
+.content .con-btn {
+  width: 120px;
+  height: 30px;
+  border: 0px solid;
+  border-radius: 13px;
+  margin-top: 22px;
+  margin-left: 20px;
+  background-color: #8b0909;
+  color: #ecf4ea;
+  box-shadow: 8px 8px 20px #070707;
+  cursor: pointer;
+}
+
+.content .btn1 {
+  margin-left: 60px;
+}
+.content .con-btn:hover {
+  width: 125px;
+  height: 35px;
+  background-color: #390099;
+  color: #eaf4f4;
+}
+/*========================================================== *3.0 >> #Second-Section. ==========================================*/
+.parent1 {
+  height: 100vh;
+  width: 96%;
+  position: relative;
+  overflow: auto;
+  background-color:#cccecd;
+  border: 0px solid;
+  border-radius: 5px;
+  margin: auto;
+}
+
+.parent1 .n1 {
+  margin-left: 20px;
+}
+
+.rs,
+.cad {
+  width: 200px;
+  height: 390px;
+  border: 1px solid;
+  border-radius: 15px;
+  margin: auto;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.cad {
+  margin-left: 30px;
+  margin-top: 100px;
+  float: left;
+  box-shadow: 6px 6px 10px #343536;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.cad:hover {
+  transform: rotateY(180deg);
+}
+
+.ico-left {
+  float: left;
+  font-size: 22px;
+  color: #03045e;
+  margin-top: 300px;
+  margin-left: 15px;
+  text-shadow: 1px 1px 1px #43485e;
+  cursor: pointer;
+}
+
+.ico-right {
+  float: right;
+  font-size: 22px;
+  color: #03045e;
+  margin-top: 300px;
+  margin-right: 15px;
+  text-shadow: 1px 2px 2px #43485e;
+  cursor: pointer;
+}
+
+.ico-right:hover {
+  font-size: 26px;
+}
+
+.ico-left:hover {
+  font-size: 26px;
+}
+.headings-1 {
+  margin-left: 70px;
+  padding-top: 50px;
+  font-family: sans-serif;
+  text-shadow: 1px 1px 1px #463b3b;
+  color: #080808;
+}
+.resp1{
+  background-image: url(../images/juice1.jpg);
+  background-size: cover;
+}
+.resp01{
+  background-image: url(../images/juice2.jpg);
+  background-size: cover;
+}
+.resp2{
+  background-image: url(../images/cake1.jpg);
+  background-size: cover;
+}
+.resp02{
+  background-image: url(../images/cake2.jpg);
+  background-size: cover;
+}
+.resp3{
+  background-image: url(../images/pizza1.jpg);
+  background-size: cover;
+}
+.resp03{
+  background-image: url(../images/pizza2.jpg);
+  background-size: cover;
+}
+.resp4{
+  background-image: url(../images/soup1.jpg);
+  background-size: cover;
+  background-position: right;
+}
+.resp04{
+  background-image: url(../images/soup2.jpg);
+  background-size: cover;
+}
+.resp5{
+  background-image: url(../images/icecream1.jpg);
+  background-size: cover;
+}
+.resp05{
+  background-image: url(../images/icecream2.jpg);
+  background-size: cover;
+}
+.resp6{
+  background-image: url(../images/mango-juice2.jpg);
+  background-size: cover;
+}
+.resp06{
+  background-image: url(../images/mango-juice1.jpg);
+  background-size: cover;
+}
+.over-card .card-btn{
+  margin-left: 13px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 7px 13px;
+  border: 0px solid;
+  border-radius: 13px;
+  color: #000000;
+  background-color: #b6bbc0;
+  box-shadow: 2px 2px 5px #323335;
+  cursor: pointer;
+}
+.over-card .card-btn:hover{
+padding: 9px 14px;
+background-color: #45039b;
+color: #ecf4ea;
+}
+.over-card p, span{
+  font-size: 15px;
+  color: #dbffed;
+  margin-left: 6px;
+}
+.over-card .star-n1{
+  margin-left: 15px;
+}
+.stars{
+  color: #ffd60a;
+  margin-bottom: 15px;
+}
+.stars:hover{
+  font-size: 22px;
+}
+.card-btn:hover .btn-ico{
+  color: #4affa5;
+
+}
+/*============================================= *4.0 >> #Third-Section . ============================================== # */
+.parent2 {
+  height: 700px;
+  width: 87%;
+  overflow: auto;
+  background-color: #cccecd;
+  border: 1px solid;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.sectype2,
+.seccard {
+  width: 200px;
+  height: 300px;
+  border: 1px solid;
+  border-radius: 14px;
+  transition: 1.5s;
+  cursor: pointer;
+}
+
+.sectype2 {
+  position: relative;
+  margin-left: 120px;
+  margin-top: 30px;
+  float: left;
+  box-shadow: 6px 6px 10px #343536;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+}
+
+.front {
+  z-index: 1;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.sectype2:hover {
+  transform: rotateY(180deg);
+}
+.heading-2{
+  margin-left: 50px;
+  padding-top: 10px;
+  font-family: sans-serif;
+  text-shadow: 2px 1px 2px #463b3b;
+  color: #080808;
+}
+.respt1{
+  background-image: url(../images/icecream1.jpg);
+  background-size: cover;
+}
+.respt01{
+  background-image: url(../images/icecream2.jpg);
+  background-size: cover;
+}
+.respt2{
+  background-image: url(../images/burger1.jpg);
+  background-size: cover;
+}
+.respt02{
+  background-image: url(../images/burger2.jpg);
+  background-size: cover;
+}
+.respt3{
+  background-image: url(../images/meat1.jpg);
+  background-size: cover;
+}
+.respt03{
+  background-image: url(../images/meat2.jpg);
+  background-size: cover;
+}
+.respt4{
+  background-image: url(../images/juice-1.jpg);
+  background-size: cover;
+}
+.respt04{
+  background-image: url(../images/juice-2.jpg);
+  background-size: cover;
+}
+.respt5{
+  background-image: url(../images/cake-1.jpg);
+  background-size: cover;
+}
+.respt05{
+  background-image: url(../images/cake-2.jpg);
+  background-size: cover;
+}
+.respt6{
+  background-image: url(../images/icetea2.jpg);
+  background-size: cover;
+}
+.respt06{
+  background-image: url(../images/icetea.jpg);
+  background-size: cover;
+}
+.respt7{
+  background-image: url(../images/pizza-1.jpg);
+  background-size: cover;
+}
+.respt07{
+  background-image: url(../images/pizza-2.jpg);
+  background-size: cover;
+}
+.respt8{
+  background-image: url(../images/bread1.jpg);
+  background-size: cover;
+}
+.respt08{
+  background-image: url(../images/bread2.jpg);
+  background-size: cover;
+}
+.over-card{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  display: block;
+}
+.back:hover .over-card{
+  visibility: visible;
+  transition: 2s;
+  opacity: 1;
+}
+/*============================================================ *5.0 >> #Footer . ========================================================= */
+.footer{
+  height: 300px;
+  width: 100%;
+  background-color: #cccecd;
+  border: 1px solid;
+  border-radius: 3px 3px 0px 0px;
+  position: relative;
+}
+.footer-divs{
+  float: left;
+  margin-top: 50px;
+  margin-left: 70px;
+}
+.copyright{
+  position: absolute;
+  bottom: 0;
+  margin-left: 600px;
+  margin-bottom: 50px;
+}
+.footer h4{
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.footer p{
+  font-size: 18px;
+}
+.footer a{
+  text-decoration: none;
+  position: relative;
+}
+.footer li{
+  list-style-type: none;
+  margin-bottom: 9px;
+}
+.footer .footer-ico{
+  color: #0530ec;
+}
+.footer .insta-footer{
+  color: #d00000;
+}
+.footer li a:after{
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 10%;
+  left: 0;
+  bottom: 0;
+  background-color: #070707;
+  opacity: 0;
+  margin-bottom: -9px;
+}
+.footer li a:hover::after{
+  width: 100%;
+  height: 10%;
+  opacity: 0.9;
+  transition: 0.5s;
+  border-radius: 15px;
+  }
